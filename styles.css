@@ -20,6 +20,13 @@ body {
     font-size: 2rem;
 }
 
+.inner-text {
+    font-family: "Courier New", Courier, monospace;
+    color:#000000;
+    text-align: left;
+    width: 300px;
+}
+
 /* Styles for the sites where form is used ---------------------- */
 form {
     display: flex;
@@ -77,7 +84,7 @@ button:hover {
   .card {
     color: white;
     position: absolute;
-    top: 35%; /* set it a bit higher then center */
+    top: 45%; /* set it a bit higher then center */
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -198,6 +205,15 @@ li:hover {
 
 span {
   font-style: italic;
+}
+
+a {
+  font-style: italic;
+  color: black;
+}
+
+a:hover {
+  color: white;
 }
 
 /* Styles for the checkboxes ------- */

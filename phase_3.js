@@ -12,8 +12,12 @@ document.addEventListener('DOMContentLoaded', () => {
 const imgInputField = document.querySelector('#image-url');
 function getImgURL(){
     const inputValue = imgInputField.value;
-    if (inputValue) {
+    const urlCheck = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/g; //regEx
+
+    if (inputValue && urlCheck.test(inputValue)) {
         storage.setItem('image', inputValue);
+    } else {
+        alert('Enter a valid image URL!')
     };
 };
 

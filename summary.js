@@ -46,10 +46,20 @@ for (let i = 0; i < userDetails.length; i++) {
         const div = document.createElement('div');
         div.textContent = `${label}: `;
 
-        const span = document.createElement('span');
-        span.textContent = value;
+        //create a link in the list from the user input.
+        if (label === 'Image'){
+            const aElement = document.createElement('a');
+            aElement.href = value || './picture/WhatsApp Image 2023-05-11 at 16.26.21.jpg'
+            aElement.textContent = 'image';
+            aElement.target = "_blank";
+            div.appendChild(aElement);
+        } else {
+            const span = document.createElement('span');
+            span.textContent = value;
+            div.appendChild(span);
+        };
 
-        div.appendChild(span);
+
         li.appendChild(div);
         userDetailsList.appendChild(li);
 
