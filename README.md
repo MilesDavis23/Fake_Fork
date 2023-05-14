@@ -1,4 +1,4 @@
-# The original and technically working WizardPorject.
+# The updated WizardPorject.
 
 
 1. Phase four is added to the phases. 
