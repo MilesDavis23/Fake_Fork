@@ -1,5 +1,4 @@
-// localStorageHandler.js
-
+//the main storage object for saving user details to the local storage:
 const storage = {
     setItem: (key, value) => {
       localStorage.setItem(key, value);
@@ -12,7 +11,7 @@ const storage = {
     removeItem: (key) => {
       localStorage.removeItem(key);
     },
-  
+    // this object is responsible for "putting the user data togather", by getting the details out from the local storage. 
     user: {
       get name() {
         return localStorage.getItem('name');
@@ -32,10 +31,10 @@ const storage = {
       get number() {
         return localStorage.getItem('number');
       },
-      get image() { //this
+      get image() { 
         return localStorage.getItem('image');
       },
-      get hobbies() { //this
+      get hobbies() { 
         return localStorage.getItem('hobbies');
       },
       get happy() {
@@ -50,7 +49,7 @@ const storage = {
 
     },
 
-
+    //function for controlling movement between phases. 
     checksite: (site) => {
       if (site === 'phase_2' && (!storage.user.name || !storage.user.email || !storage.user.birthdate)) {
           window.location.href = './phase_1.html';
@@ -73,16 +72,15 @@ const storage = {
       return true;
     },
 
+    //reset function
     reset: () => {
       localStorage.clear()
-      // pageManager.redirectToPhase1()
       window.location.href = './phase_1.html'
     }
+
   };
   
-  //export default storage;
-  
-//buttons:
+//buttons for moving amoung phases:
 function toPhase1(){
   window.location.href = './phase_1.html'
 };

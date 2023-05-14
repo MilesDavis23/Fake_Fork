@@ -1,5 +1,3 @@
-// phase2.js
-
 const thisSite = 'phase_2'
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,5 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
   backButton.addEventListener('click', () => {
     window.location.href = './phase_1.html';
   });
-  
+});
+
+//event listener for the card fillping:
+document.querySelector('.card').addEventListener('mouseover', function() {
+  document.body.style.backgroundColor = "black"; // replace with your color
+});
+
+document.querySelector('.card').addEventListener('mouseout', function() {
+  document.body.style.backgroundColor = "white"; // replace with your color
 });

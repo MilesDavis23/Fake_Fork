@@ -17,10 +17,9 @@ function getImgURL(){
     };
 };
 
-//get hobbies array
+//Function for checking the checkboxes, returning their value. 
 function getQuestion(quary){
     const questionField = quary;
-    //const hobbiesField = document.querySelectorAll('input[name="happy"]:checked');
     const checkedHobbiesArr = [];
     for (let i = 0; i < questionField.length; i++){
         checkedHobbiesArr.push(questionField[i].value);
@@ -42,9 +41,10 @@ function getHappy(){
     const happyCheck = document.querySelectorAll('input[name="happy"]:checked');
     const skyDiveCheck = document.querySelectorAll('input[name="skydive"]:checked');
     const moneyCheck = document.querySelectorAll('input[name="dollar"]:checked');
-    const answerOne = getQuestion(happyCheck);
+    const answerOne = getQuestion(happyCheck);  // calling the function on each checkbox, corresponding to the question. 
     const answerTwo = getQuestion(skyDiveCheck);
     const answerThree = getQuestion(moneyCheck);
+
     if (answerOne) {
         storage.setItem('happy', answerOne);
     }
@@ -53,6 +53,15 @@ function getHappy(){
     } 
     if (answerThree) {
         storage.setItem('money', answerThree);
-    }
+    };
 };
+
+//evenet listener for changing background on flipping:
+document.querySelector('.card').addEventListener('mouseover', function() {
+    document.body.style.backgroundColor = "black"; // replace with your color
+});
+
+document.querySelector('.card').addEventListener('mouseout', function() {
+    document.body.style.backgroundColor = "white"; // replace with your color
+});
 

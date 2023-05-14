@@ -9,30 +9,36 @@
     <title>Phase 1</title>
 </head>
 <body>
-    <form class="main-box">
-        <div class="question-div-phase1">
-            <label for="name">Name</label>
-            <input id="name" type="text" 
-                pattern = "^[A-Z][a-z]{1,}([ ][A-Z][a-z]{1,}){1,}"
-                required
-            ></input>
+    <div class ="card">
+        <div class="content">
+            <div class = "front">
+                <h2 class="title">phase 1.</h2>
+            </div>
+        <div class="back">
+            <form> 
+                <input class="" id="name" type="text" 
+                            pattern = "^[A-Z][a-z]{1,}([ ][A-Z][a-z]{1,}){1,}"
+                            required
+                            placeholder="enter your name: "
+                ></input>
+
+                <input class="" id="email" type="email" 
+                        required
+                        placeholder="enter your e-mail:"
+                ></input>
+
+                <input class="" id="birthDate" type="text"
+                        pattern = "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/[0-9]{2}$"
+                        placeholder="Enter your birthdate: dd/MM/yy"
+                        required
+                ></input>
+
+                <div class="button-div">
+                        <button style="width: 280px;" type="submit" onclick="toPhase2()">Next</button>
+                </div> 
+            </form> 
         </div>
-        <div class="question-div-phase1">
-            <label for="email">Email</label>
-            <input id="email" type="email" required></input>
-        </div>
-        <div class="question-div-phase1">
-            <label for="birthDate">Birth Date</label>
-            <input id="birthDate" type="text"
-                pattern = "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/[0-9]{2}$"
-                placeholder="dd/MM/yy"
-                required
-            ></input>
-        </div>
-        <div class="button-div">
-            <button type="submit" onclick="toPhase2()">Next</button>
-        </div>
-    </form>
+    </div>
     <script src="phase_1.js"></script>
     <script src="common.js"></script>
 </body>

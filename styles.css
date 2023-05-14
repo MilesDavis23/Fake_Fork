@@ -1,78 +1,52 @@
 body {
-    /*background-image: url('./picture/WhatsApp Image 2023-05-11 at 16.26.21.jpeg'); */
-    display: flex;
-    background-color: #FFD8BE;
-    display: flex;
+    background-color: white;
     justify-content: center;
-    align-items: center;
-    align-items: center;
+    margin: auto;
 }
 
-/* Big box */
-.main-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #EBEBD2;
-    box-shadow: 3px 4px 1px 0px rgba(49, 54, 56, 0.64);
-    width: 500px;
-    height: auto;
-    padding-bottom: 20px;
-}
-
-.box-title {
+/* font class for titles -------------------------------------- */
+.title {
     padding-left: 30px;
     font-family: "Courier New", Courier, monospace;
     font-size: 25px;
     letter-spacing: 2px;
     word-spacing: -5px;
-    color: #000000;
+    color: white;
     font-weight: 400;
-    text-decoration: underline solid rgb(68, 68, 68);
     font-style: normal;
     font-variant: small-caps;
     text-transform: lowercase;
-}
-/* Separate lil divs */
-.question-div {
-    margin: 10px;
-    width : 280px;
-    height: auto;
-    background-color: #F2F4F3;
-    border: #000000 solid 2px;
-    padding-bottom: 10px;
+    transform: translateZ(5rem);
+    font-size: 2rem;
 }
 
-/* Separate css for phase2 div*/
-.question-div-phase1 {
+/* Styles for the sites where form is used ---------------------- */
+form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 10px;
-    width : 280px;
-    height: 50px;
-    background-color: #F2F4F3;
-    border: #000000 solid 2px;
-    padding-bottom: 10px;
+    justify-content: space-evenly;
+    transform: translateZ(5rem);
 }
 
+input {
+    margin: 10px;
+    border-bottom: solid;
+}
+
+form input {
+  width: 280px;
+}
+
+/* Separate css for button divs */
 .button-div {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width : 280px;
-    height: 60px;
-    background-color: #F2F4F3;
-    border: #000000 solid 2px;
-}
-
-.question{
-    margin: 10px;
-    width : 280px;
-    height: 60px;
-    background-color: #F2F4F3;
-    border: #000000 solid 2px;
+    width : auto;
+    height: auto;
+    margin: 15px;
+    transform: translateZ(5rem);
 }
 
 button {
@@ -83,10 +57,12 @@ button {
     text-shadow: 0px 0px 0px #191919;
     box-shadow: 1px 1px 1px #191919;
     padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
     border-radius: 0px;
     border: 1px solid #191919;
     background: #F2F4F3;
-    width: 50px;
+    width: 137px;
     height: 25px;
 
   }
@@ -96,3 +72,142 @@ button:hover {
     background: #191919;
 
   }
+
+  /* The new Style and animation -------------------------------------------- */
+  .card {
+    color: white;
+    position: absolute;
+    top: 35%; /* set it a bit higher then center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    cursor: pointer;
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: black;
+    padding: 5em;
+    transform-style: preserve-3d;
+    width: 15rem;
+    height: 15rem;
+    
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  
+  .subtitle {
+    transform: translateZ(2rem);
+  }
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color: white
+  }
+
+  
+  .description {
+    transform: translateZ(3rem);
+  }
+
+/* div styles for the hobbies html: */
+.hobbies-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* aligns items to the right */
+    color: black; /* changes text color to black */
+    border: solid black;
+    height: auto;
+    width: 270px;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+    transform: translateZ(5rem);
+}
+
+.hobbies-div p {
+  display: flex;
+  align-items: flex-start;
+}
+
+#image-url {
+  width: 240px;
+}
+
+input[type='checkbox'] {
+  margin: 2px;
+  border: solid;
+  padding-left: 0px; /* or whatever padding value you want */
+}
+
+/* for the questiond divs on */
+.question-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* aligns items to the right */
+  color: black; /* changes text color to black */
+}
+
+/* styles for summary page -------------- */
+.summary-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  overflow: hidden;
+  width: 200px;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+li:hover {
+  width: auto;
+  background-color: black;
+  color: white;
+}
+
+span {
+  font-style: italic;
+}
+
+/* Styles for the checkboxes ------- */
+.checkbox-group {
+    display: flex;
+    justify-content: flex-start; /* aligns checkbox and label to the right */
+}
+
+.checkbox-group label {
+    margin-right: 10px; /* adds some space between the checkbox and the label */
+    color: black; /* changes text color to black */
+}
+

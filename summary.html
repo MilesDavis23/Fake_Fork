@@ -5,14 +5,23 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <div class="main-box">
-            <h1 class="box-title"> Person Summary </h1>
-            <div class="question-div" >
+        <div class="card">
+            <div class="content">
+                <div class="front">
+                    <h1 class="title">Summary</h1>
+                </div>
+                <div class="back">
+                    <div class="hobbies-div">
+                        <p style="font-style:inherit">User Summary: </p>
+                        <div class="question-div" >
+                        </div>
+                    </div>    
+                    <div class="button-div">
+                        <button class="button" id="back-button" onclick="toPhase3()"> Back </button>
+                        <button class="button" id="reset-button" onclick="storage.reset()"> Reset </button>
+                    </div>
+                </div>
             </div>
-            <div class="button-div">
-                <button class="button" id="back-button" onclick="toPhase3()"> Back </button>
-                <button class="button" id="reset-button" onclick="storage.reset()"> Reset </button>
-             </div>
         </div>
         <script src="common.js"></script>
         <script src="summary.js"></script>

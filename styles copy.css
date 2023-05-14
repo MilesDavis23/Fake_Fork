@@ -1,0 +1,160 @@
+body {
+    /*background-image: url('./picture/WhatsApp Image 2023-05-11 at 16.26.21.jpeg'); */
+    background-color: white;
+    justify-content: center;
+    margin: auto;
+}
+
+/* Big box */
+.main-box {
+    /* this way we can always center a container and its elements:*/
+    position: absolute;
+    top: 35%; /* set it a bit higher then center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* ----------------------------------------------------------- */
+    background-color:  #F2F4F3;
+    box-shadow: 3px 4px 1px 0px rgba(49, 54, 56, 0.64);
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.box-title {
+    padding-left: 30px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+    word-spacing: -5px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+/* Separate lil divs */
+.question-div {
+    margin: 10px;
+    width : 280px;
+    height: auto;
+    background-color: #F2F4F3;
+    border: #000000 solid 2px;
+    padding-bottom: 10px;
+}
+
+/* Separate css for phase2 div*/
+.question-div-phase1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width : 280px;
+    height: 50px;
+    background-color: #F2F4F3;
+    border: #000000 solid 2px;
+    padding-bottom: 10px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width : 280px;
+    height: 60px;
+    background-color: #F2F4F3;
+    border: #000000 solid 2px;
+}
+
+.question{
+    margin: 10px;
+    width : 280px;
+    height: 60px;
+    background-color: #F2F4F3;
+    border: #000000 solid 2px;
+}
+
+button {
+    font-family: 'courier new';
+    font-weight: bold;
+    color: #000000;
+    font-size: 12px;
+    text-shadow: 0px 0px 0px #191919;
+    box-shadow: 1px 1px 1px #191919;
+    padding: 5px;
+    border-radius: 0px;
+    border: 1px solid #191919;
+    background: #F2F4F3;
+    width: 50px;
+    height: 25px;
+
+  }
+
+button:hover {
+    color: #F2F4F3;
+    background: #191919;
+
+  }
+
+  /* The new Style */
+  .card {
+    color: white;
+    position: absolute;
+    top: 35%; /* set it a bit higher then center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    cursor: pointer;
+  }
+  
+  .content {
+    text-align: center;
+    position: relative;
+    transition: all 2.25s;
+    background-color: black;
+    padding: 5em;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .card:hover .content {
+    transform: rotateY(0.5turn);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 2em;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  .title {
+    transform: translateZ(5rem);
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    transform: translateZ(2rem);
+  }
+  
+  .back {
+    transform: rotateY(0.5turn);
+    background-color: black
+  }
+  
+  .description {
+    transform: translateZ(3rem);
+  }
