@@ -44,3 +44,12 @@ function getHobbies(){
     }
 };
 
+//evenet listener for changing background on flipping:
+document.querySelector('.card').addEventListener('mouseover', function() {
+    document.body.style.backgroundColor = "black"; // replace with your color
+});
+
+document.querySelector('.card').addEventListener('mouseout', function() {
+    document.body.style.backgroundColor = "white"; // replace with your color
+});
+

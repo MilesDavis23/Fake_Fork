@@ -1,8 +1,6 @@
 const birthDate = document.querySelector("#birthDate")
 const form = document.querySelector("form")
 
-
-
 function fillInDashes(event){
     let value = event.target.value
     if(value.length == 2 || value.length == 5){
@@ -19,3 +17,12 @@ form.addEventListener("submit", function(event){
 })
 
 birthDate.addEventListener("keyup", fillInDashes)
+
+//event listener for flipping the card:
+document.querySelector('.card').addEventListener('mouseover', function() {
+    document.body.style.backgroundColor = "black"; // replace with your color
+});
+
+document.querySelector('.card').addEventListener('mouseout', function() {
+    document.body.style.backgroundColor = "white"; // replace with your color
+});
