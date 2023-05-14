@@ -8,15 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     storage.checksite(thisSite);
 });
 
-//get imgURL from  the input
-const imgInputField = document.querySelector('#image-url');
-function getImgURL(){
-    const inputValue = imgInputField.value;
-    if (inputValue) {
-        storage.setItem('image', inputValue);
-    };
-};
-
 //Function for checking the checkboxes, returning their value. 
 function getQuestion(quary){
     const questionField = quary;
