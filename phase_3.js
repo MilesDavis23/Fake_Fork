@@ -1,7 +1,7 @@
 /* functions for phase 3 */
 //import storage from "./common"
 
-const thisSite = 'phase3'
+const thisSite = 'phase_3'
 
 //check if stuff is there in the local Storage:
 document.addEventListener('DOMContentLoaded', () => {

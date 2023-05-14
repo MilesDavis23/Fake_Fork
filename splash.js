@@ -4,6 +4,6 @@ document.addEventListener('DOMContentLoaded',
 
     startButton.addEventListener('click', () => {
         storage.setItem('splashShown', 'true');
-        window.location.href = './phase1.html';
+        window.location.href = './phase_1.html';
     });
 });

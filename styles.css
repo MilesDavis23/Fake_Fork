@@ -38,7 +38,7 @@ body {
 .question-div {
     margin: 10px;
     width : 280px;
-    height: 160px;
+    height: auto;
     background-color: #F2F4F3;
     border: #000000 solid 2px;
     padding-bottom: 10px;

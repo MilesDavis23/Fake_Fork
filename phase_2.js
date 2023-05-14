@@ -1,6 +1,6 @@
 // phase2.js
 
-const thisSite = 'phase2'
+const thisSite = 'phase_2'
 
 document.addEventListener('DOMContentLoaded', () => {
   const phase2Form = document.getElementById('phase2-form');
@@ -30,12 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       return;
     };
-
-    //window.location.href = '../phase3/index.html';
   });
 
   backButton.addEventListener('click', () => {
-    window.location.href = './phase1.html';
+    window.location.href = './phase_1.html';
   });
   
 });

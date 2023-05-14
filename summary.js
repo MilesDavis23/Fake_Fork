@@ -18,6 +18,9 @@ const userDetails = [
     ['Number', storage.user.number],
     ['Hobbies', storage.user.hobbies],
     ['Image', storage.user.image],
+    ['Mood', storage.user.happy],
+    ['Skydvie', storage.user.skydive],
+    ['Got money', storage.user.money]
 ];
 
 //Display a list with user details:

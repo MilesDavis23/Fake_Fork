@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Phase 3 </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="main-box">
+            <h1 class="box-title">Phase 4</h1>
+
+            <div class="question-div">
+                <p> Are you a happy person?</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="yes" name="happy" value="happy">
+                    <label for="yes"> Yes </label>
+                    <input type="checkbox" id="no" name="happy" value="sad">
+                    <label for="no"> No </label>
+                </div>
+            </div>
+
+            <div class="question-div">
+                <p> Will you do skydiving?</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="yes" name="skydive" value="yes.">
+                    <label for="yes"> Yes </label>
+                    <input type="checkbox" id="no" name="skydive" value="no.">
+                    <label for="no"> No </label>
+                    <input type="checkbox" id="maybe" name="skydive" value="maybe.">
+                    <label for="maybe"> Maybe </label>
+                </div>
+            </div>
+
+            <div class="question-div">
+                <p> Do you have 1$ in your pocker right now?</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="yes" name="dollar" value="yes.">
+                    <label for="yes"> Yes </label>
+                    <input type="checkbox" id="no" name="dollar" value="no.">
+                    <label for="no"> No </label>
+                </div>
+            </div>
+
+            <div class="button-div">
+                <button class="button" id="back-button" onclick="toPhase3()"> Back </button>
+                <button class="button" id="next-button" onclick="getHappy(), goToSummary()"> Next </button>
+             </div>
+
+        </div>
+        <script src="phase_4.js"></script>
+        <script src="common.js"></script>
+    </body>
+</html>
