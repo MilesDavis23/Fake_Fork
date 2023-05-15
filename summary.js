@@ -32,10 +32,6 @@ const questionDiv = document.querySelector('.question-div');
 const userDetailsList = document.createElement('ul');
 userDetailsList.className = 'user-details';
 
-// for(const details of storage.toArray()) {
-
-// }
-
 //loop through the user details:
 for (let i = 0; i < userDetails.length; i++) {
         const label = userDetails[i][0];
